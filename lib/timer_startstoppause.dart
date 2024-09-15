@@ -184,27 +184,25 @@ class StartStopPauseState extends State<StartStopPause> {
 
   Widget walkOrRunColor() {
     if (_walkOrRun == "Run") {
-      return Center(
-        child: Text(
-          _walkOrRun,
-          style: const TextStyle(
-            fontSize: 50,
-            color: Colors.red,
-            fontWeight: FontWeight.w600,
-            fontStyle: FontStyle.normal,
-          ),
+      return Text(
+        _walkOrRun,
+        textAlign: TextAlign.center,
+        style: const TextStyle(
+          fontSize: 50,
+          color: Colors.red,
+          fontWeight: FontWeight.w600,
+          fontStyle: FontStyle.normal,
         ),
       );
     } else {
-      return Center(
-        child: Text(
-          _walkOrRun,
-          style: const TextStyle(
-            fontSize: 50,
-            color: Colors.green,
-            fontWeight: FontWeight.w600,
-            fontStyle: FontStyle.normal,
-          ),
+      return Text(
+        _walkOrRun,
+        textAlign: TextAlign.center,
+        style: const TextStyle(
+          fontSize: 50,
+          color: Colors.green,
+          fontWeight: FontWeight.w600,
+          fontStyle: FontStyle.normal,
         ),
       );
     }
